@@ -74,13 +74,18 @@ project. The things we do on any given day are often not pre-planned or “produ
 Everything is written in the imperative mood (e.g. “write...”, “play...”) so that you can just as easily write log
 entries for future days, which can serve as your plan for the future.
 
-## Usage
+## Installation
 
 Copy the `shimei` script into your `PATH`, e.g.:
 
 ```
 $ cp shimei ~/.local/bin/
 ```
+
+Then, you'll want to install the [shimei.vim](https://github.com/vladh/shimei.vim) vim integration, to get nice
+colours.
+
+## Usage
 
 When you want to check both your log and todo files, it's as simple as typing `shimei` in your terminal!
 
