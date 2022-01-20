@@ -1,3 +1,5 @@
+![shimei](images/shigoto_zaitaku_cat_woman.png)
+
 # shimei
 
 shimei is a super simple task management system. It is file-based and is meant to be used together with vim. However,
@@ -71,3 +73,7 @@ project. The things we do on any given day are often not pre-planned or “produ
 
 Everything is written in the imperative mood (e.g. “write...”, “play...”) so that you can just as easily write log
 entries for future days, which can serve as your plan for the future.
+
+## Credits
+
+Icon by [irasutoya](https://www.irasutoya.com)
