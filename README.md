@@ -74,6 +74,27 @@ project. The things we do on any given day are often not pre-planned or “produ
 Everything is written in the imperative mood (e.g. “write...”, “play...”) so that you can just as easily write log
 entries for future days, which can serve as your plan for the future.
 
+## Usage
+
+Copy the `shimei` script into your `PATH`, e.g.:
+
+```
+cp shimei ~/.local/bin/
+```
+
+Follow the script's usage information:
+
+```
+Usage:
+    $ shimei [goals]
+
+Examples:
+    $ shimei
+        open editor with log and tasks
+    $ shimei goals
+        print goals
+```
+
 ## Credits
 
 Icon by [irasutoya](https://www.irasutoya.com)
