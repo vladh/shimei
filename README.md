@@ -2,9 +2,9 @@
 
 # shimei
 
-shimei is a super simple task management system. It is file-based and is meant to be used together with vim. However,
-the ideas and simplicity are what's important, so you can customise this system to work with other technology (send a
-PR!).
+shimei is a super simple task management system. It is file-based and is meant to be used in the terminal together with
+vim. However, the ideas and simplicity are what's important, so you can easily customise this system to work with other
+programs and workflows.
 
 ## Concepts
 
@@ -79,7 +79,13 @@ entries for future days, which can serve as your plan for the future.
 Copy the `shimei` script into your `PATH`, e.g.:
 
 ```
-cp shimei ~/.local/bin/
+$ cp shimei ~/.local/bin/
+```
+
+When you want to check both your log and todo files, it's as simple as typing `shimei` in your terminal!
+
+```
+$ shimei
 ```
 
 Follow the script's usage information:
