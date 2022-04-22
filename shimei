@@ -6,8 +6,8 @@ import re
 import sys
 
 
-def print_goals():
-    with open(os.path.expanduser("~/.shimei/todo.shimei")) as f:
+def print_goals(shimei_dir):
+    with open(os.path.expanduser(f"{shimei_dir}todo.shimei")) as f:
         lines = f.readlines()
         proj = ""
         for line in lines:
@@ -23,9 +23,9 @@ def print_goals():
                 print(f"[{proj}!{goal}]{rest}")
 
 
-def open_editor():
+def open_editor(shimei_dir):
     date_string = date.today().strftime("%d-%m-%Y")
-    os.system(f"vim \"+syn match currentDate '{date_string}' | hi def link currentDate String\" -O ~/.shimei/log.shimei ~/.shimei/todo.shimei")
+    os.system(f"vim \"+syn match currentDate '{date_string}' | hi def link currentDate String\" -O {shimei_dir}log.shimei {shimei_dir}todo.shimei")
 
 
 def print_help():
@@ -42,12 +42,15 @@ def print_help():
 
 
 def main():
+    shimei_dir = '~/.shimei/'
+    if 'SHIMEI_DIR' in os.environ:
+        shimei_dir = os.environ['SHIMEI_DIR'] + '/'
     args = sys.argv[1:]
     if len(args) == 0:
-        return open_editor()
+        return open_editor(shimei_dir)
     else:
         if args[0] == "goals":
-            return print_goals()
+            return print_goals(shimei_dir)
     return print_help()
 
 

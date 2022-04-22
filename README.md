@@ -20,8 +20,8 @@ shimei relies on a few simple concepts.
 
 ## Files
 
-shimei reads files from the `~/.shimei` directory. The default setup has two files.
-
+shimei reads files from the `~/.shimei` directory by default. You can use a different directory by setting the
+`SHIMEI_DIR` environment variable. The default setup has two files.
 
 ### `~/.shimei/todo.shimei`
 
@@ -29,8 +29,7 @@ The idea of the todo file is to list everything that needs to be done. It looks 
 
 ```
 [read]
-    ! [intl] Read more books by authors from non-English-speaking countries
-    - Read “Invisible Cities” by Italo Calvino
+    ! [intl] Read more books by authors from non-English-speaking countries - Read “Invisible Cities” by Italo Calvino
     - Read “The History of Western Philosophy” by Bertrand Russell
 
 [song]
