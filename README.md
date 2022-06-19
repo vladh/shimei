@@ -57,7 +57,7 @@ The idea of the log file is to write down everything you do each day. It looks s
     - Plant some flowers in the garden
     - Play Minecraft
 
-19-01-2022
+17-01-2022 to 19-01-2022
     - Nothing! (and that's cool too)
 ```
 
